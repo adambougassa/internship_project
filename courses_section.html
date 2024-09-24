@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Title</title>
+    </head>
+    
+    <body>
+        <header>
+        <div class="logo">
+            <img src="images/logo.jpeg" style="background-color: blue"> ADAM BOUGASSA
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses_section.html">Courses</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        </header>
+        <br>
+        <!-- Popular Courses Section -->
+        <section id="popular-courses">
+            <h2>Most Popular Courses</h2> 
+            <div class="course-grid">
+                <div class="course-card">
+                    <h3>Python for Beginners</h3>
+                    <video class="course-video" controls>
+                        <source src="/images/anime.mp4" type="video/mp4">
+                    </video>
+                    <p>Learn the basics of Python programming.</p>
+                </div>
+                <div class="course-card">
+                    <h3>JavaScript Essentials</h3>
+                    <video class="course-video" controls>
+                        <source src="/images/anime.mp4" type="video/mp4">
+                    </video>
+                    <p>Master the fundamentals of JavaScript.</p>
+                </div>
+                <div class="course-card">
+                    <h3>C++ Programming</h3>
+                    <video class="course-video" controls>
+                        <source src="/images/anime.mp4" type="video/mp4">
+                    </video>
+                    <p>Get started with C++ programming.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filter Courses Section -->
+        <section id="courses">
+            <h2>All Courses</h2>
+            <div class="filter">
+                <button onclick="filterCourses('Python')">Python</button>
+                <button onclick="filterCourses('JavaScript')">JavaScript</button>
+                <button onclick="filterCourses('C++')">C++</button>
+            </div>
+            <div class="course-grid" id="course-list">
+                <div class="course-card" data-category="Python">
+                    <h3>Advanced Python</h3>
+                    <p>Instructor: <ins>Mr. Shadow</ins></p>
+                    <video class="course-video" controls>
+                        <source src="/images/anime.mp4" type="video/mp4">
+                    </video>
+                    <p>Deep dive into Python programming.</p>
+                </div>
+            </div>
+        </section>
+    
+    </body>
+</html>
